@@ -5,6 +5,8 @@ import subprocess
 from datetime import datetime
 from discordwebhook import Discord # type: ignore
 
+discord = Discord(url="<your webhook url>")
+
 def save_ssh_logs():
     global filename 
     filename = datetime.now().strftime("%d_%m_%Y_%Hh_ssh_logs.json") # Nommage en fonction de la date
